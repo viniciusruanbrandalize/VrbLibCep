@@ -1,0 +1,114 @@
+object frmDemo: TfrmDemo
+  Left = 349
+  Height = 368
+  Top = 250
+  Width = 510
+  Caption = 'Demonstração VrbLibCep'
+  ClientHeight = 368
+  ClientWidth = 510
+  OnShow = FormShow
+  Position = poScreenCenter
+  object mRetorno: TMemo
+    Left = 5
+    Height = 185
+    Top = 5
+    Width = 500
+    Align = alClient
+    BorderSpacing.Around = 5
+    Lines.Strings = (
+      'mRetorno'
+    )
+    ReadOnly = True
+    ScrollBars = ssBoth
+    TabOrder = 0
+  end
+  object PageControl1: TPageControl
+    Left = 5
+    Height = 168
+    Top = 195
+    Width = 500
+    ActivePage = TabSheet1
+    Align = alBottom
+    BorderSpacing.Around = 5
+    TabIndex = 0
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'Busca por CEP'
+      ClientHeight = 140
+      ClientWidth = 492
+      object edtCep: TLabeledEdit
+        Left = 8
+        Height = 23
+        Top = 32
+        Width = 144
+        EditLabel.Height = 15
+        EditLabel.Width = 144
+        EditLabel.Caption = 'CEP:'
+        MaxLength = 9
+        TabOrder = 0
+        Text = 'edtCep'
+      end
+      object Button1: TButton
+        Left = 392
+        Height = 25
+        Top = 112
+        Width = 75
+        Caption = 'Buscar'
+        TabOrder = 1
+        OnClick = Button1Click
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Busca Por Logradouro'
+      ClientHeight = 140
+      ClientWidth = 492
+      object Button2: TButton
+        Left = 392
+        Height = 25
+        Top = 112
+        Width = 75
+        Caption = 'Buscar'
+        TabOrder = 0
+        OnClick = Button2Click
+      end
+      object edtLogradouro: TLabeledEdit
+        Left = 8
+        Height = 23
+        Top = 24
+        Width = 459
+        EditLabel.Height = 15
+        EditLabel.Width = 459
+        EditLabel.Caption = 'Logradouro:'
+        TabOrder = 1
+        Text = 'edtLogradouro'
+      end
+      object edtCidade: TLabeledEdit
+        Left = 8
+        Height = 23
+        Top = 72
+        Width = 296
+        EditLabel.Height = 15
+        EditLabel.Width = 296
+        EditLabel.Caption = 'Cidade:'
+        TabOrder = 2
+        Text = 'edtCidade'
+      end
+      object edtUf: TLabeledEdit
+        Left = 312
+        Height = 23
+        Top = 72
+        Width = 80
+        EditLabel.Height = 15
+        EditLabel.Width = 80
+        EditLabel.Caption = 'UF:'
+        TabOrder = 3
+        Text = 'edtUf'
+      end
+    end
+  end
+  object VrbViaCep1: TVrbViaCep
+    GerarException = False
+    Left = 40
+    Top = 56
+  end
+end

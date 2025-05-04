@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <Units>
+      <Unit>
+        <Filename Value="vrbViaCep.pas"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="226"/>
+        <CursorPos X="14" Y="257"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="6">
+      <Position>
+        <Filename Value="vrbViaCep.pas"/>
+        <Caret Line="58" Column="44" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="vrbViaCep.pas"/>
+        <Caret Line="54" Column="30" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="vrbViaCep.pas"/>
+        <Caret Line="343" Column="39" TopLine="224"/>
+      </Position>
+      <Position>
+        <Filename Value="vrbViaCep.pas"/>
+        <Caret Line="244" Column="25" TopLine="224"/>
+      </Position>
+      <Position>
+        <Filename Value="vrbViaCep.pas"/>
+        <Caret Line="92" Column="47" TopLine="56"/>
+      </Position>
+      <Position>
+        <Filename Value="vrbViaCep.pas"/>
+        <Caret Line="85" Column="42" TopLine="59"/>
+      </Position>
+      <Position>
+        <Filename Value="vrbViaCep.pas"/>
+        <Caret Line="53" Column="22" TopLine="106"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

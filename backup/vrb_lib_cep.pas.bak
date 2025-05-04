@@ -1,0 +1,23 @@
+{ This file was automatically created by Lazarus. Do not edit!
+  This source is only used to compile and install the package.
+ }
+
+unit vrb_lib_cep;
+
+{$warn 5023 off : no warning about unused units}
+interface
+
+uses
+  vrbViaCep, vrbTypes, LazarusPackageIntf;
+
+implementation
+
+procedure Register;
+begin
+  RegisterUnit('vrbViaCep', @vrbViaCep.Register);
+  RegisterUnit('vrbTypes', @vrbTypes.Register);
+end;
+
+initialization
+  RegisterPackage('vrb_lib_cep', @Register);
+end.

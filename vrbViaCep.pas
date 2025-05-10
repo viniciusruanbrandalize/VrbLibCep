@@ -46,8 +46,14 @@ type
     FComplemento: String;
     FBairro: String;
     FCidade: String;
+    FEstado: String;
     FUF:     String;
     FIBGE: String;
+    FRegiao: String;
+    FDDD: String;
+    FGIA: String;
+    FSIAFI: String;
+    FUnidade: String;
   public
     constructor Create;
     destructor Destroy; override;
@@ -56,8 +62,14 @@ type
     property Complemento: String read FComplemento write FComplemento;
     property Bairro: String read FBairro write FBairro;
     property Cidade: String read FCidade write FCidade;
+    property Estado: String read FEstado write FEstado;
     property UF: String read FUF write FUF;
     property IBGE: String read FIBGE write FIBGE;
+    property Regiao: String read FRegiao write FRegiao;
+    property DDD: String read FDDD write FDDD;
+    property GIA: String read FGIA write FGIA;
+    property SIAFI: String read FSIAFI write FSIAFI;
+    property Unidade: String read FUnidade write FUnidade;
   end;
 
 type
@@ -100,10 +112,6 @@ type
     constructor Create(AOwner: TComponent); override;
     destructor Destroy; override;
 
-    property CEP: String read FCep write SetCep;
-    property Logradouro: String read FLogradouro write SetLogradouro;
-    property Cidade: String read FCidade write SetCidade;
-    property UF: String read FUf write SetUF;
     property StrJSON: String read FTodos;
     property Erro: String read FErro;
     property Endereco: TListaVrbEndereco read FEndereco;
@@ -111,6 +119,10 @@ type
   published
     property TipoBusca: TTipoBusca read FTipoBusca write SetTipoBusca default bCep;
     property URL: String read FURL;
+    property CEP: String read FCep write SetCep;
+    property Logradouro: String read FLogradouro write SetLogradouro;
+    property Cidade: String read FCidade write SetCidade;
+    property UF: String read FUf write SetUF;
     property GerarException: Boolean read FGerarException write SetGerarException default True;
     property Versao: String read FVersao;
     property Sobre: String read FSobre;
@@ -335,6 +347,12 @@ begin
             FEndereco[Pred(FEndereco.Count)].Bairro      := Json.Items[i].FindPath('bairro').AsString;
             FEndereco[Pred(FEndereco.Count)].Cidade      := Json.Items[i].FindPath('localidade').AsString;
             FEndereco[Pred(FEndereco.Count)].Uf          := Json.Items[i].FindPath('uf').AsString;
+            FEndereco[Pred(FEndereco.Count)].Unidade     := Json.Items[i].FindPath('unidade').AsString;
+            FEndereco[Pred(FEndereco.Count)].DDD         := Json.Items[i].FindPath('ddd').AsString;
+            FEndereco[Pred(FEndereco.Count)].Regiao      := Json.Items[i].FindPath('regiao').AsString;
+            FEndereco[Pred(FEndereco.Count)].GIA         := Json.Items[i].FindPath('gia').AsString;
+            FEndereco[Pred(FEndereco.Count)].SIAFI       := Json.Items[i].FindPath('siafi').AsString;
+            FEndereco[Pred(FEndereco.Count)].Estado      := Json.Items[i].FindPath('estado').AsString;
           end;
         end
         else
@@ -348,6 +366,12 @@ begin
           FEndereco[Pred(FEndereco.Count)].Bairro      := Json.FindPath('bairro').AsString;
           FEndereco[Pred(FEndereco.Count)].Cidade      := Json.FindPath('localidade').AsString;
           FEndereco[Pred(FEndereco.Count)].Uf          := Json.FindPath('uf').AsString;
+          FEndereco[Pred(FEndereco.Count)].Unidade     := Json.FindPath('unidade').AsString;
+          FEndereco[Pred(FEndereco.Count)].DDD         := Json.FindPath('ddd').AsString;
+          FEndereco[Pred(FEndereco.Count)].Regiao      := Json.FindPath('regiao').AsString;
+          FEndereco[Pred(FEndereco.Count)].GIA         := Json.FindPath('gia').AsString;
+          FEndereco[Pred(FEndereco.Count)].SIAFI       := Json.FindPath('siafi').AsString;
+          FEndereco[Pred(FEndereco.Count)].Estado      := Json.FindPath('estado').AsString;
         end;
 
       except on ex:Exception do

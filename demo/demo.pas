@@ -64,8 +64,14 @@ begin
     mRetorno.Lines.Add('Complemento: '+VrbViaCep1.Endereco[0].Complemento);
     mRetorno.Lines.Add('Bairro: '+     VrbViaCep1.Endereco[0].Bairro);
     mRetorno.Lines.Add('Cidade: '+     VrbViaCep1.Endereco[0].Cidade);
+    mRetorno.Lines.Add('Estado: '+     VrbViaCep1.Endereco[0].Estado);
     mRetorno.Lines.Add('UF: '+         VrbViaCep1.Endereco[0].UF);
     mRetorno.Lines.Add('Cód. IBGE: '+  VrbViaCep1.Endereco[0].IBGE);
+    mRetorno.Lines.Add('Região: '+     VrbViaCep1.Endereco[0].Regiao);
+    mRetorno.Lines.Add('DDD: '+        VrbViaCep1.Endereco[0].DDD);
+    mRetorno.Lines.Add('GIA: '+        VrbViaCep1.Endereco[0].GIA);
+    mRetorno.Lines.Add('SIAFI: '+      VrbViaCep1.Endereco[0].SIAFI);
+    mRetorno.Lines.Add('Unidade: '+    VrbViaCep1.Endereco[0].Unidade);
   end
   else
   begin
@@ -95,8 +101,14 @@ begin
       mRetorno.Lines.Add('Complemento: '+VrbViaCep1.Endereco[i].Complemento);
       mRetorno.Lines.Add('Bairro: '+     VrbViaCep1.Endereco[i].Bairro);
       mRetorno.Lines.Add('Cidade: '+     VrbViaCep1.Endereco[i].Cidade);
+      mRetorno.Lines.Add('Estado: '+     VrbViaCep1.Endereco[i].Estado);
       mRetorno.Lines.Add('UF: '+         VrbViaCep1.Endereco[i].UF);
+      mRetorno.Lines.Add('Região: '+     VrbViaCep1.Endereco[i].Regiao);
       mRetorno.Lines.Add('Cód. IBGE: '+  VrbViaCep1.Endereco[i].IBGE);
+      mRetorno.Lines.Add('DDD: '+        VrbViaCep1.Endereco[i].DDD);
+      mRetorno.Lines.Add('GIA: '+        VrbViaCep1.Endereco[i].GIA);
+      mRetorno.Lines.Add('SIAFI: '+      VrbViaCep1.Endereco[i].SIAFI);
+      mRetorno.Lines.Add('Unidade: '+    VrbViaCep1.Endereco[i].Unidade);
       mRetorno.Lines.Add('');
     end;
 

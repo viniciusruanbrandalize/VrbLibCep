@@ -70,6 +70,10 @@ modules/
 
 #Arquivos temporarios
 compile/
+bin/
+res/
 backup/
-demo/backup/
-demo/compile/
+demo/laz/backup/
+demo/laz/compile/
+demo/delphi/backup/
+demo/delphi/compile/

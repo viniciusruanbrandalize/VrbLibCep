@@ -9,7 +9,8 @@
       <Version Value="11"/>
       <PathDelim Value="\"/>
       <SearchPaths>
-        <UnitOutputDirectory Value="compile\$(TargetCPU)-$(TargetOS)"/>
+		<OtherUnitFiles Value="..\..\src\laz"/>
+        <UnitOutputDirectory Value="..\..\bin\laz\$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
       <Linking>
         <Debugging>
@@ -42,9 +43,9 @@
     <Version Major="1"/>
     <Files>
       <Item>
-        <Filename Value="vrbViaCep.pas"/>
+        <Filename Value="..\..\src\laz\vrbViaCep.pas"/>
         <HasRegisterProc Value="True"/>
-        <UnitName Value="vrbViaCep"/>
+        <UnitName Value="..\..\src\laz\vrbViaCep"/>
       </Item>
     </Files>
     <RequiredPkgs>
